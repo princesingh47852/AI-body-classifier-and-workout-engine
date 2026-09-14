@@ -47,7 +47,7 @@ SQL Server: PostgreSQL, MySQL, or SQLite
 1- Clone the Repository
 
 Bash
-git clone [https://github.com/aadi25bce10331-netizen/AI-body-classifier-and-workout-engine.git](https://github.com/YOUR USERNAME/AI-body-classifier-and-workout-engine.git)cd AI-body-classifier-and-workout-engine
+git clone [https://github.com/YOUR USERNAME/AI-body-classifier-and-workout-engine.git](https://github.com/YOUR USERNAME/AI-body-classifier-and-workout-engine.git)cd AI-body-classifier-and-workout-engine
 
 2-Create & Activate Virtual Environment
 
