@@ -1,5 +1,6 @@
 
 import os
+
 # Code of main.py
 
 from fastapi import FastAPI
@@ -11,7 +12,7 @@ app = FastAPI(title="SOMA Core Engine API")
 
 # Read allowed frontend URL from environment variable (set this on Render)
 # Fallback to localhost for local development
-ALLOWED_ORIGIN = os.getenv("ALLOWED_ORIGIN", "http://localhost:5173")
+ALLOWED_ORIGIN = os.getenv("ALLOWED_ORIGIN", "https://ai-body-classifier-and-workout-engi.vercel.app/")
 
 app.add_middleware(
     CORSMiddleware,
