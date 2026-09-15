@@ -1,3 +1,4 @@
+import os
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from workout_engine import router as workout_router
@@ -5,10 +6,13 @@ from workout_engine import router as workout_router
 # Initialize the FastAPI app
 app = FastAPI(title="SOMA Core Engine API")
 
-# Setup CORS so your future React frontend can talk to this backend
+# Read allowed frontend URL from environment variable (set this on Render)
+# Fallback to localhost for local development
+ALLOWED_ORIGIN = os.getenv("ALLOWED_ORIGIN", "http://localhost:5173")
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"], # In production, change this to your frontend URL
+    allow_origins=[ALLOWED_ORIGIN],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],

@@ -33,3 +33,11 @@ venv/
 .venv/
 env/
 .env/
+
+# Python cache - never needed in repo
+__pycache__/
+*.pyc
+*.pyo
+
+# Large model files - not needed (project uses MediaPipe, not this)
+somatotype_model.h5
