@@ -1,8 +1,7 @@
-<<<<<<< HEAD
+
 import os
-=======
 # Code of main.py
->>>>>>> 9369f603b11c96e4a85e148762d1388439af8659
+
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from workout_engine import router as workout_router
