@@ -1,6 +1,6 @@
 fastapi
 uvicorn
 opencv-contrib-python-headless
-mediapipe==0.10.35
-numpy
+mediapipe
+numpy<2.0.0
 python-multipart
