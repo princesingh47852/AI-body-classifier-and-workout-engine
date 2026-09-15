@@ -2,7 +2,7 @@
     "rewrites": [
         {
             "source": "/api/(.*)",
-            "destination": "https://ai-body-classifier-and-workout-engine.onrender.com"
+            "destination": "https://ai-body-classifier-and-workout-engine.onrender.com/api/$1"
         },
         {
             "source": "/(.*)",
